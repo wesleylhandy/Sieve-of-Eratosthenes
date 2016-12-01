@@ -8,11 +8,16 @@ function reset() {
 }
 
 function getPrimes(max) {
+  //reset any previous results
   reset();
+  //display user entry
+  document.querySelector("#max").innerHTML = '&nbsp;' + max;
   //initialize variables
   var sieve = [], i, j, primes = [];
-  //outerloop interates (inclusive) to max received from user
-  // loop starts with 2, being the first prime number
+  /*
+  outerloop interates (inclusive) to max received from user
+  loop starts with 2, being the first prime number
+  */
   for (i = 2; i <= max; i++) {
     if (!sieve[i]) {
       // i has not been marked -- it is prime
@@ -43,7 +48,6 @@ function getPrimes(max) {
     }
   }
   //display results
-  document.querySelector("#max").innerHTML = '&nbsp;' + max;
   document.querySelector("#length").innerHTML = '&nbsp;' + primes.length;
   //display primes in a row
   for (let k = 0; k < primes.length; k++) {

@@ -1,10 +1,10 @@
 html {
-	position: relative;
+	
   	min-height: 100%;
 }
 
 body {
-	color: #0B6F00;
+	color: #522C2F;
 	font-family: 'Electrolize', sans-serif;
 	font-size: 125%;
 	background-image: url(use_your_illusion/use_your_illusion.png);
@@ -13,6 +13,9 @@ body {
 
 .jumbotron {
 	background-image: url(gplaypattern/gplaypattern.png);
+	border-bottom-style: solid;
+	border-bottom-color: #FAA1A8;
+	border-bottom-width: .325em;
 }
 
 .jumbotron h1 {
@@ -23,15 +26,15 @@ body {
 }
 
 .btn, .btn-primary, .btn-primary:active, .btn-primary:focus, .btn-primary:visited, .btn-primary:target {
-	color: #0B6F00;
-	background-color: #FB3A44;
-	border-color: #B00009;
+	color: #FAA1A8;
+	background-color: #908485;
+	border-color: #FAA1A8;
 }
 
 .btn-primary:hover {
-	color: #0B6F00;
-	border-color: #850007;
-	background-color: #FB000D;
+	color: #FAA1A8;
+	border-color: #FAA1A8;
+	background-color: #715A5C;
 }
 
 h2 {
@@ -39,7 +42,7 @@ h2 {
 }
 
 .red {
-	color: #D9000B;
+	color: #FAA1A8;
 }
 
 #num-entry {
@@ -49,34 +52,35 @@ h2 {
 #results-window {
 	padding-bottom: 6em;
 	margin-bottom: 2em;
-	color: #883B00;
+	color: #522C2F;
+	background-image: url(gplaypattern/gplaypattern.png);
+	border: 2px solid #FAA1A8;
 }
 
 .footer {
-	position: absolute;
-	bottom: 0;
+	margin-top: 0.5em;
 	padding-top: 0.5em;
 	width: 100%;
 	/* Set the fixed height of the footer here */
 	height: 6em;
-	color: #883B00;
+	color: #522C2F;
 	background-image: url(gplaypattern/gplaypattern.png);
 	border-top-style: solid;
-	border-top-color: #D9000B;
+	border-top-color: #FAA1A8;
 	border-top-width: .325em;
 }
 
 .footer a:link {
     text-decoration: none;
-    color: #883B00;
+    color: black;
     font-size: 2em;
 }
 
 .footer a:visited {
     text-decoration: none;
-    color: #883B00;
+    color: black;
 }
 
 .footer a:hover {
-    filter: drop-shadow(0.063em 0.063em 0em #D9000B);
+    filter: drop-shadow(0.063em 0.063em 0em #FAA1A8);
 }
