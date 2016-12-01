@@ -20,29 +20,32 @@ body {
 
 .jumbotron h1 {
 	text-align: center;
+	filter: drop-shadow(0.05em 0.05em 0em #FAA1A8);
 }
 .jumbotron p {
 	padding-left: 21%;
+	filter: drop-shadow(0.05em 0.05em 0em #908485);
 }
 
 .btn, .btn-primary, .btn-primary:active, .btn-primary:focus, .btn-primary:visited, .btn-primary:target {
 	color: #FAA1A8;
-	background-color: #908485;
+	background-color: #715A5C;	
 	border-color: #FAA1A8;
 }
 
 .btn-primary:hover {
 	color: #FAA1A8;
 	border-color: #FAA1A8;
-	background-color: #715A5C;
+	background-color: #908485;
 }
 
 h2 {
 	text-decoration: underline;
 }
 
-.red {
+.theme-color {
 	color: #FAA1A8;
+	filter: drop-shadow(0.05em 0.05em 0em #908485);
 }
 
 
