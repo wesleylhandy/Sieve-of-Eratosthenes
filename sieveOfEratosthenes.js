@@ -14,7 +14,7 @@ function getPrimes(max) {
   //display user entry
   document.querySelector("#max").innerHTML = '&nbsp;' + max;
   //initialize variables
-  var sieve = [], i, j, primes = [];
+  var sieve = [], i, j, primes = [], thisPrime;
   /*
   outerloop interates (inclusive) to max received from user
   loop starts with 2, being the first prime number
@@ -52,8 +52,10 @@ function getPrimes(max) {
   document.querySelector("#length").innerHTML = '&nbsp;' + primes.length;
   //display primes in a row
   for (let k = 0; k < primes.length; k++) {
-    var thisPrime = document.createTextNode(" " + primes[k] + " ");
+
+    thisPrime = document.createTextNode(primes[k] + " | ");
     document.querySelector('#primes').appendChild(thisPrime);
+  
   }
   
 }

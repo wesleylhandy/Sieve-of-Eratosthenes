@@ -50,6 +50,10 @@ h2 {
 	padding-bottom: 2em;
 }
 
+#primes {
+	font-size: 125%;
+}
+
 #results-window {
 	padding-bottom: 6em;
 	margin-bottom: 2em;
