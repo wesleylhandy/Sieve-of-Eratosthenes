@@ -1,7 +1,14 @@
-function getPrimes(max) {
+function reset() {
   document.querySelector("#max").innerHTML = "";
   document.querySelector("#length").innerHTML = "";
-  document.querySelector("#primes").innerHTML = "";
+  var box = document.getElementById("primes");
+  while (box.firstChild) {
+    box.removeChild(box.firstChild);
+  }
+}
+
+function getPrimes(max) {
+  reset();
   //initialize variables
   var sieve = [], i, j, primes = [];
   //outerloop interates (inclusive) to max received from user

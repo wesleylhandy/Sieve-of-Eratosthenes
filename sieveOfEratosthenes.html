@@ -28,13 +28,26 @@
 </div>
 <div class = "container">
 	<div class = "row">
-		<div class = "col-xs-12 col-sm-6 col-md-4 col-lg-4">
-			<p>Enter a Number between 2 and 2,000,000:&nbsp;</p>
+		<div class = "col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			<h3 class = "red">Enter a Number between 2 and 2,000,000:&nbsp;</h3>
+			<p class = "small red">Larger number take longer to calculate <em>and</em> to reset.</p>
 			<form id = "num-entry">
-				<input type="number" min="0" max="2000000" step="1" label = "Max Number" id="num"><br>
-				<input type = "button" value = "Submit" onclick="getPrimes(document.getElementById('num').value)">
+				<input type="number" min="2" max="2000000" step="1" label = "Max Number" id="num">
+				<br><br>
+				<button class = "btn btn-primary" onclick="reset()">Reset</button>
+				<input type = "button" class="btn btn-primary" value = "Submit" onclick="getPrimes(document.getElementById('num').value)">
 			</form>
 		</div>
+		<!--
+		<div class = "col-xs-6 col-sm-6 col-md-4 col-lg-4">
+		Learn More About Primes 
+		
+			https://primes.utm.edu/index.html
+			http://brianhan.tumblr.com/post/46454945029
+			https://youtu.be/lEvXcTYqtKU
+
+		</div>
+		-->
 	</div>
 </div>
 <div class = "container">
@@ -44,7 +57,7 @@
 				<h2>Results</h2>
 			</div>
 			<div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<p>Primes between 0 and <span id = "max"></span></p>
+				<p>Primes between 1 and<span id = "max"></span></p>
 			</div>
 			<div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<p>Total Primes: <span id = "length"></span></p>

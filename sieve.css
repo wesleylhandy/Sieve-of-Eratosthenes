@@ -1,0 +1,82 @@
+html {
+	position: relative;
+  	min-height: 100%;
+}
+
+body {
+	color: #0B6F00;
+	font-family: 'Electrolize', sans-serif;
+	font-size: 125%;
+	background-image: url(use_your_illusion/use_your_illusion.png);
+	height: 100%;
+}
+
+.jumbotron {
+	background-image: url(gplaypattern/gplaypattern.png);
+}
+
+.jumbotron h1 {
+	text-align: center;
+}
+.jumbotron p {
+	padding-left: 21%;
+}
+
+.btn, .btn-primary, .btn-primary:active, .btn-primary:focus, .btn-primary:visited, .btn-primary:target {
+	color: #0B6F00;
+	background-color: #FB3A44;
+	border-color: #B00009;
+}
+
+.btn-primary:hover {
+	color: #0B6F00;
+	border-color: #850007;
+	background-color: #FB000D;
+}
+
+h2 {
+	text-decoration: underline;
+}
+
+.red {
+	color: #D9000B;
+}
+
+#num-entry {
+	padding-bottom: 2em;
+}
+
+#results-window {
+	padding-bottom: 6em;
+	margin-bottom: 2em;
+	color: #883B00;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	padding-top: 0.5em;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 6em;
+	color: #883B00;
+	background-image: url(gplaypattern/gplaypattern.png);
+	border-top-style: solid;
+	border-top-color: #D9000B;
+	border-top-width: .325em;
+}
+
+.footer a:link {
+    text-decoration: none;
+    color: #883B00;
+    font-size: 2em;
+}
+
+.footer a:visited {
+    text-decoration: none;
+    color: #883B00;
+}
+
+.footer a:hover {
+    filter: drop-shadow(0.063em 0.063em 0em #D9000B);
+}
