@@ -7,6 +7,7 @@ function reset() {
   }
 }
 
+
 function getPrimes(max) {
   //reset any previous results
   reset();
