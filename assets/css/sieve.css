@@ -7,12 +7,12 @@ body {
 	color: #522C2F;
 	font-family: 'Electrolize', sans-serif;
 	font-size: 125%;
-	background-image: url(use_your_illusion/use_your_illusion.png);
+	background-image: url(../images/use_your_illusion/use_your_illusion.png);
 	height: 100%;
 }
 
 .jumbotron {
-	background-image: url(gplaypattern/gplaypattern.png);
+	background-image: url(../images/gplaypattern/gplaypattern.png);
 	border-bottom-style: solid;
 	border-bottom-color: #FAA1A8;
 	border-bottom-width: .325em;
@@ -53,6 +53,10 @@ h2 {
 	padding-bottom: 2em;
 }
 
+/*#reset {
+	visibility: hidden;
+}*/
+
 #primes {
 	font-size: 125%;
 }
@@ -61,7 +65,7 @@ h2 {
 	padding-bottom: 6em;
 	margin-bottom: 2em;
 	color: #522C2F;
-	background-image: url(gplaypattern/gplaypattern.png);
+	background-image: url(../images/gplaypattern/gplaypattern.png);
 	border: 2px solid #FAA1A8;
 }
 
@@ -72,7 +76,7 @@ h2 {
 	/* Set the fixed height of the footer here */
 	height: 6em;
 	color: #522C2F;
-	background-image: url(gplaypattern/gplaypattern.png);
+	background-image: url(../images/gplaypattern/gplaypattern.png);
 	border-top-style: solid;
 	border-top-color: #FAA1A8;
 	border-top-width: .325em;

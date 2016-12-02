@@ -1,6 +1,5 @@
-var primesGot = false;
-
 function reset() {
+  document.activeElement.blur();
   document.querySelector("#max").innerHTML = "";
   document.querySelector("#length").innerHTML = "";
   var box = document.getElementById("primes");
@@ -11,6 +10,10 @@ function reset() {
 
 
 function getPrimes(max) {
+  //reset any previous results
+  reset();
+  //display user entry
+  document.querySelector("#max").innerHTML = '&nbsp;' + max;
   //initialize variables
   var sieve = [], i, j, primes = [], thisPrime;
   /*
@@ -53,8 +56,8 @@ function getPrimes(max) {
 
     thisPrime = document.createTextNode(primes[k] + " | ");
     document.querySelector('#primes').appendChild(thisPrime);
+  
   }
-  //change display
-  document.querySelector("#max").innerHTML = '&nbsp;' + max;
-
+  document.getElementById("num").focus();
+  
 }
