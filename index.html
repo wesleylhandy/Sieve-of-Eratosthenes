@@ -41,7 +41,7 @@
 				<div class = "form-group">
 					<div class="xs-col-12 col-sm-12 col-md-6 col-lg-6">
 						<input type = "button" class="btn btn-primary" value = "Submit" id = "submit" onclick="getPrimes(document.getElementById('num').value)">
-						<button class = "btn btn-primary" id = "reset" onclick="reset()">Reset</button>
+						<button class = "btn btn-primary" id = "reset" onsubmit="reset()">Reset</button>
 					</div>
 				</div>
 			</form>
@@ -79,12 +79,12 @@
 </div>
 
 <footer class = "footer text-center" document.getElementById("dummy").focus();id = "about">
-    <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i>2016 Wesley L. Handy</p>
+    <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i><span id="year"></span>&nbsp;Wesley L. Handy</p>
     <a href="https://github.com/wesleylhandy/Sieve-of-Eratosthenes" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
 </footer>
 
 <script type="text/javascript">
-	window.onload = function() {
+	window.onload = function(event) {
 		document.getElementById("num").focus();
 	}
 </script>

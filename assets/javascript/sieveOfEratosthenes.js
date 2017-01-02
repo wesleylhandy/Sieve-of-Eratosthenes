@@ -1,3 +1,8 @@
+//set date
+var d = new Date();
+var year = d.getFullYear();
+document.getElementById("year").innerHTML = year;
+
 function reset() {
   document.activeElement.blur();
   document.querySelector("#max").innerHTML = "";
