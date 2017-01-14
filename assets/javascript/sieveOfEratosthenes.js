@@ -63,6 +63,22 @@ function getPrimes(max) {
     document.querySelector('#primes').appendChild(thisPrime);
   
   }
-  document.getElementById("num").focus();
+
   
 }
+
+$(document).ready(function(){
+
+  $(document).on("click", "#submit", function(event) {
+    event.preventDefault();
+    var val = $("#num").val();
+    $("#num").val('');
+    getPrimes(val);
+  });
+
+  $(document).on("click", "#reset", function(event) {
+    event.preventDefault();
+    reset();
+  });
+
+});

@@ -20,6 +20,9 @@
 	<!--Custom CSS-->
 	<link rel="stylesheet" href="assets/css/sieve.css">
 
+	<!-- jQuery -->
+	<script type="text/javascript" src="assets/javascript/jquery-3.1.1.min.js"></script>
+
 </head>
 <body>
 <div class = "jumbotron">
@@ -40,8 +43,8 @@
 				</div>
 				<div class = "form-group">
 					<div class="xs-col-12 col-sm-12 col-md-6 col-lg-6">
-						<input type = "button" class="btn btn-primary" value = "Submit" id = "submit" onclick="getPrimes(document.getElementById('num').value)">
-						<button class = "btn btn-primary" id = "reset" onsubmit="reset()">Reset</button>
+						<input type = "button" class="btn btn-primary" value = "Submit" id = "submit">
+						<button class = "btn btn-primary" id = "reset">Reset</button>
 					</div>
 				</div>
 			</form>
@@ -83,11 +86,6 @@
     <a href="https://github.com/wesleylhandy/Sieve-of-Eratosthenes" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
 </footer>
 
-<script type="text/javascript">
-	window.onload = function(event) {
-		document.getElementById("num").focus();
-	}
-</script>
 <script type="text/javascript" src="assets/javascript/sieveOfEratosthenes.js"></script>
 
 </body>
