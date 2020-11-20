@@ -49,13 +49,18 @@ h2 {
 }
 
 
-#num-entry {
+#primeform {
 	padding-bottom: 2em;
 }
 
 /*#reset {
 	visibility: hidden;
 }*/
+
+#num:invalid {
+	border-color: crimson;
+	border-width: 3px;
+}
 
 #primes {
 	font-size: 125%;
